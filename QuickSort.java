@@ -128,43 +128,20 @@ public class QuickSort
 	double start;
 	double end;
 	double total = 0;	
-	for (int x = 0; x < 1000; x++){
-	    shuffle (warm);
-	    start = System.currentTimeMillis();						
-	    qsort(warm);
-	    end = System.currentTimeMillis();
-	    total += end - start;
-	} 
-	System.out.println(total/1000.0);
-	total = 0;
-	for (int x = 0; x < 1000; x++){
-	    shuffle (warm);
-	    start = System.currentTimeMillis();						
-	    qsort(warm);
-	    end = System.currentTimeMillis();
-	    total += end - start;
-	} 
-	System.out.println(total/1000.0);
-	total = 0;
-	for (int x = 0; x < 1000; x++){
-	    shuffle (warm);
-	    start = System.currentTimeMillis();						
-	    qsort(warm);
-	    end = System.currentTimeMillis();
-	    total += end - start;
-	} 
-	System.out.println(total/1000.0);
-	total = 0;
-	for (int x = 0; x < 1000; x++){
-	    shuffle (warm);
-	    start = System.currentTimeMillis();						
-	    qsort(warm);
-	    end = System.currentTimeMillis();
-	    total += end - start;
-	} 
-	System.out.println(total/1000.0);
-	total = 0;
-	
+	for (int y = 2000; y < 5000; y+= 100){//starting at a size 2000 arr go up til a size 5000 arr and test timings
+	    warm = buildArray(y,1000);
+	    for (int x = 0; x < 1000; x++){//run each test 1000 times for precision
+		shuffle (warm);
+		start = System.currentTimeMillis();						
+		qsort(warm);
+		end = System.currentTimeMillis();
+		total += end - start;
+	    }
+	    System.out.println("Printing tests for arrs of size" + y + "....");
+	    System.out.println(total/1000.0);
+	    total = 0;
+
+	}
 
     }//end main
 
