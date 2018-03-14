@@ -17,12 +17,13 @@ public class QuickSortTester {
 	    warm = QuickSort.buildArray(y,1000);
 	    start = System.currentTimeMillis();
 	    for (int x = 0; x < 1000; x++){//run each test 1000 times for precision
-		QuickSort.shuffle(warm);						
+		QuickSort.shuffle(warm);
+		start = System.nanoTime();
 		QuickSort.qsort(warm);
-	    }
-	    end = System.currentTimeMillis();
-	    total += end - start;
-
+		end = System.nanoTime();    
+		total += end - start;
+	    }	    
+	    
 	    System.out.println(y + "," + total/1000.0);
 	    total = 0;
 	}
