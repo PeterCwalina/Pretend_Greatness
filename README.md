@@ -12,5 +12,6 @@
 ## Methodology
 
 ## Results
+![](Pictures/data.PNG)
 
 ## Conclusions
