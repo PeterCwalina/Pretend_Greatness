@@ -25,3 +25,4 @@ To time QuickSort and get a sense of the big-O on average, we took advantage of 
 While it may not seem so at first, this graph represent O(nlogn). It does seem to look linear but using a straightedge, it is more evident that there is indeed a curve in the data. 
 
 ## Conclusions
+The runtime seems to run on average in nlogn time.  This being due to the variance of best to worst case runtimes, but after averaging the runtimes of a multitude of cases, the graph seems to indicate a nlogn curve.  Therefore on average the algoririthm will run in nlogn time, but keep in mind that it can and will vary so it is not consistent unlike mergesort which will always run in nlogn time.  This is also an explanation for some of the random time spikes in the graph, which were probably caused by the randomness of the possible times.
