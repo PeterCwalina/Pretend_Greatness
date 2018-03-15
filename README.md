@@ -10,9 +10,9 @@ We predict that on average, QuickSort runs at O(nlogn) time, but in the worst ca
 
 
 ## Assessment
-Best Case: O(nlogn)
-Avergae: O(nlogn)
-Worst Case O(n^2)
+- Best Case: O(nlogn)
+- Avergae: O(nlogn)
+- Worst Case O(n^2)
 
 ## Methodology
 
