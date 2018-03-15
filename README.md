@@ -22,6 +22,7 @@ To time QuickSort and get a sense of the big-O on average, we took advantage of 
 
 ## Results
 ![](Pictures/data.PNG)
+
 While it may not seem so at first, this graph represent O(nlogn). It does seem to look linear but using a straightedge, it is more evident that there is indeed a curve in the data. 
 
 ## Conclusions
